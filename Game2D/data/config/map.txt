@@ -1,0 +1,55 @@
+[ 此文档中存放地图相关的数据 ]
+
+[ 第一部分 ]
+
+[ 地面 ]
+[ 地图尺寸 100 * 50 ]
+[ 窗口尺寸 720 * 480 宽度不是标准的 ]
+
+[ 注意： framework 中不能有注释 ]
+[ row 先写出 y 方向的坐标，然后写 x 方向的 ]
+[ col 先写出 x 方向的坐标，然后写 y 方向的 ]
+
+[ 注意应当保证所有物体的坐标都非负 ]
+
+[ link 连接模式 应当成对出现坐标，分别作为连接的范围 ]
+[ point 点模式 逐点设置位置 ]
+
+[ 另外，相同的“行”可以重复出现 ]
+
+[ 搭建地图 ]
+framework ground
+	12 row link 2 10 -1
+	12 row link 20 30 -1
+	12 row link 12 18 -1
+	10 row link 30 50 -1
+	6 row link 2 50 -1
+	1 col link 6 12 -1
+-1
+
+[ 人物位置 ]
+{
+	Detail name man
+
+	[ 人物属性 ]
+    Single HP 3
+    Single attack 1
+    Single jump 20
+	Point speed 5 0
+
+	Point pos 5 10
+}
+
+[ 布置怪物 ]
+
+{
+	Detail name defender
+
+	[ 位置信息 ]
+    Point pos 5 10
+	[ 可移动范围 left right ]
+	Point range 5 10
+	Detail dir left
+}
+
+end

@@ -1,0 +1,17 @@
+﻿cmake_minimum_required(VERSION 3.10)
+
+project(Game2D)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+add_definitions(-DTEST_DATA_PATH="${CMAKE_SOURCE_DIR}/data")
+
+file(GLOB_RECURSE SOURCES *.cpp *.h)
+
+add_executable(main ${SOURCES})
+
+set_target_properties(main PROPERTIES WIN32_EXECUTABLE TRUE)
+
+target_include_directories(main PUBLIC include)

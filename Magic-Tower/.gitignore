@@ -1,0 +1,6 @@
+﻿# settings
+.vs
+.vscode
+build/
+out/
+*.json

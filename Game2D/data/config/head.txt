@@ -1,0 +1,52 @@
+[ 首页的样式 ]
+
+{
+    Detail name cbutton
+
+    [ 附加消息 ]
+    Detail text 开始
+    Detail result start
+
+    [ 位置信息 ]
+    Point pos 290 200
+}
+
+{
+    Detail name cbutton
+
+    Detail text 加载
+    Detail result load
+
+    Point pos 290 250
+}
+
+{
+    Detail name cbutton
+
+    Detail text 设置
+    Detail result setting
+
+    Point pos 290 300
+}
+
+{
+    Detail name cbutton
+
+    Detail text 关于
+    Detail result about
+
+    Point pos 290 350
+}
+
+[ 控件之间相互分离 ]
+[ 首页设置的窗口 ]
+{
+    Detail name window
+
+    [ 附加消息 ]
+    Detail show false
+
+    Point pos 150 100
+}
+
+end

@@ -1,0 +1,101 @@
+[ 此处存放所有全局定义 ]
+
+{
+    Detail class Man
+    Detail name man
+
+    Point size 32 32
+
+    [ 剑 ]
+    [ 剑刺的步数，以及停止步数（需要有静止帧体现惯性） ]
+    Single swordStep 12
+    Single swordStay 9
+    Point swordPos1 0 128
+    Point swordPos2 32 128
+
+    [ 盾 id 用于标识计时器 ]
+    Single shieldID 1
+    Point shieldSize 45 45
+    Point shieldPos 64 128
+    [ 分别是护盾持续时间，和发起护盾需要的时间（从开启护盾算起） ]
+    Single shieldTime 3000
+    Single shieldCool 6000
+    
+
+    [ 矩形修正 ]
+    Single wFix 0.70
+    Single hFix 1
+}
+
+[ 物体应当标注类名 ]
+{
+    [ 地面 ]
+    Detail class GStatic
+    Detail name ground
+
+    Point size 32 32
+
+    Single wFix 1
+    Single hFix 1
+
+    Point imagePos 0 0
+}
+
+{
+    [ 点击选择按钮 ]
+    Detail class GButton
+    Detail name cbutton
+
+    Point size 140 40
+
+    Single wFix 0.9
+    Single hFix 0.9
+
+    Point imagePos1 0 0
+    Point imagePos2 140 0
+}
+
+{
+    [ 游戏中的选项窗口 ]
+    Detail class GStatic
+    Detail name window
+
+    Point size 420 280
+
+    Point imagePos 0 480
+}
+
+[ 一共有三种怪物 ]
+
+[ 使用镰刀挥砍的怪物 ]
+
+{
+    Detail class Enemy
+    Detail name defender
+
+    Single HP 10
+
+    [ 注意：这里只表示速度大小，还需要确定方向 ]
+    Point speed 2 0
+
+    Point size 32 32
+    Point imagePos 0 0
+
+    Single wFix 1
+    Single hFix 1
+
+    [ 长枪 ]
+    [ 攻击范围 ]
+    Single range 32
+    Single speedBuf 8
+    Single bufTime 1500
+
+    [ 位置修正 ]
+    Single dx 16
+
+    Point actSize 50 32
+    Point actPos1 0 128
+    Point actPos2 50 128
+}
+
+end

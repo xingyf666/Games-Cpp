@@ -1,0 +1,37 @@
+[ 此处存放资源文件的路径 ]
+
+object
+{
+    object ../../data/config/object.txt
+}
+
+map
+{
+    map ../../data/config/map.txt
+}
+
+UI
+{
+    head ../../data/config/head.txt
+}
+
+image
+{
+    Background ../../data/image/background.png
+    Man ../../data/image/man.png
+    GStatic ../../data/image/ground.png
+    GWindow ../../data/image/window.png
+    GButton ../../data/image/cbutton.png
+    Enemy ../../data/image/enemy.png
+}
+
+music
+{
+    head ../../data/music/ColdWarEcho.mp3
+    game ../../data/music/Cosmos.mp3
+}
+
+[ sword ../../data/music/sword.mp3 ]
+[ hurt ../../data/music/hurt.mp3 ]
+
+end
